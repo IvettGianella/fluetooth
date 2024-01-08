@@ -10,7 +10,7 @@ class FluetoothDevice {
   final String id;
 
   /// The name of this Bluetooth device.
-  /// 
+  ///
   /// Note that on iOS, [name] can be empty
   final String name;
 
@@ -24,10 +24,8 @@ class FluetoothDevice {
   @override
   bool operator ==(Object other) {
     if (identical(this, other)) return true;
-  
-    return other is FluetoothDevice &&
-      other.id == id &&
-      other.name == name;
+
+    return other is FluetoothDevice && other.id == id && other.name == name;
   }
 
   @override
